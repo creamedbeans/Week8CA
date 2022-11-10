@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Random Number</title>
+        <script src="external.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="style.css">
+        <body>
+
+            <centre><button type="button" name="button" onclick="randomNumber();">Click me for a random number between 0 and 1000!</button></centre>
+            <h1>Your random number will be displayed below</h1>
+            <p id="displayNumber"></p>
+
+            <div>
+                
+                <form>
+                    <input type="button" onclick="sayHello()" value="DO NOT PRESS THIS BUTTON">
+                </form>
+                <p id="demo">YOU HAVE BEEN WARNED</p>
+            </div>
+
+            <script type="text/javascript">
+                var number1 = prompt("Please enter the first number");
+                var parsedNumber1Value = parseInt(number1);
+     
+                var number2 = prompt("Please enter the second number");
+                var parsedNumber2Value = parseInt(number2);
+     
+                var sum = parsedNumber1Value + parsedNumber2Value;
+                alert("The sum of " + parsedNumber1Value + "+" + parsedNumber2Value + "=" + sum);
+     
+                var multiplication = parsedNumber1Value * parsedNumber2Value;
+                alert("The product of " + parsedNumber1Value + "x" + parsedNumber2Value + "=" + multiplication);
+     
+                var division = parsedNumber1Value / parsedNumber2Value;
+                alert("The division value of " + parsedNumber1Value + "/" + parsedNumber2Value + "=" + division);
+     
+                var subtraction = parsedNumber1Value * parsedNumber2Value;
+                alert("The subtraction value of " + parsedNumber1Value + "-" + parsedNumber2Value + "=" + subtraction);
+     
+                
+                
+             </script>
+
+        </body>
+    </head>
+</html>
